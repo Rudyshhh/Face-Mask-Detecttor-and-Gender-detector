@@ -1,0 +1,34 @@
+PS C:\Users\acer\Desktop\Mask> python -u "c:\Users\acer\Desktop\Mask\Gender-Detection-master\evaluate_gender_model.py"
+[INFO] loading model...
+2024-11-18 00:26:48.902196: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 33554432 exceeds 10% of free system memory.
+2024-11-18 00:26:48.953151: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 33554432 exceeds 10% of free system memory.
+2024-11-18 00:26:49.419909: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 33554432 exceeds 10% of free system memory.
+2024-11-18 00:26:49.440092: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 33554432 exceeds 10% of free system memory.
+[INFO] evaluating network...
+15/15 [==============================] - 2s 86ms/step
+              precision    recall  f1-score   support
+
+         man       0.99      0.98      0.99       232
+       woman       0.98      0.99      0.99       230
+
+    accuracy                           0.99       462
+   macro avg       0.99      0.99      0.99       462
+weighted avg       0.99      0.99      0.99       462
+
+PS C:\Users\acer\Desktop\Mask> python -u "c:\Users\acer\Desktop\Mask\Face-Mask-Detection-master\evaluate_model.py"
+[INFO] loading model...
+[INFO] evaluating network...
+2024-11-18 00:30:10.406629: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 156905472 exceeds 10% of free system memory.
+  1/346 [..............................] - ETA: 26:022024-11-18 00:30:11.892351: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 156905472 exceeds 10% of free system memory.
+  2/346 [..............................] - ETA: 4:19 2024-11-18 00:30:12.588221: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 156905472 exceeds 10% of free system memory.
+  3/346 [..............................] - ETA: 4:372024-11-18 00:30:13.494436: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 156905472 exceeds 10% of free system memory.
+  4/346 [..............................] - ETA: 5:342024-11-18 00:30:14.844553: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 156905472 exceeds 10% of free system memory.
+346/346 [==============================] - 244s 695ms/step
+              precision    recall  f1-score   support
+
+   with_mask       0.95      0.73      0.82      5521
+without_mask       0.78      0.96      0.86      5521
+
+    accuracy                           0.84     11042
+   macro avg       0.86      0.84      0.84     11042
+weighted avg       0.86      0.84      0.84     11042
