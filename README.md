@@ -1,4 +1,4 @@
-
+UniMask is a powerful tool that detects face masks and determines gender (man or woman) using deep learning techniques. The application offers an intuitive interface and supports input from images, videos, and real-time webcam feeds.
 ---
 
 # UniMask: Face Mask & Gender Detection Application
